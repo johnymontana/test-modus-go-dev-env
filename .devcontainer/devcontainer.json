@@ -3,16 +3,16 @@
 {
 	"name": "Go",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/go:1-1.23-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/universal:focal",
 	// "build": {
 	// 	// Path is relative to the devcontainer.json file.
 	// 	"dockerfile": "Dockerfile"
 	// },
 	"postStartCommand": "npm i -g @hypermode/modus-cli && modus sdk install go --force",
-	"features": {
-		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/devcontainers-community/features/tinygo:1": {}
-	},
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/node:1": {},
+	// 	"ghcr.io/devcontainers-community/features/tinygo:1": {}
+	// },
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
